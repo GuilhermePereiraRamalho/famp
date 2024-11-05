@@ -9,7 +9,7 @@ class Settings(BaseSettings):
     Configurações gerais usadas na aplicação
     """
     API_V1_STR: str = "/api/v1"
-    DB_URL: str = "postgresql+asyncpg://guilherme:etabeta@localhost:5432/fastapi"
+    DB_URL: str = "postgresql+asyncpg://guilherme:12345@localhost:5432/fastapi"
     DBBaseModel: ClassVar[DeclarativeMeta] = declarative_base()
     JWT_SECRET: str = "Uiydix9ZpAb7vyjYrnguVWHlIoJ8R6rZq7FoiDgwSiA"
     ALGORITHM: str = "HS256"
